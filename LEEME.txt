@@ -1,0 +1,44 @@
+KEBABRICO — CARTA Y EDITOR LOCAL
+=================================
+
+ARCHIVOS PRINCIPALES
+- index.html: carta web con productos, precios, categorías y diseño.
+- editar-fotos.html: editor para cambiar la foto de cualquier producto.
+- servidor-local.js: servidor local y API que utiliza el editor.
+- INICIAR-WINDOWS.bat: inicia el servidor y abre la carta y el editor.
+- assets/: fotografías y recursos que utiliza la carta.
+
+INICIAR EN WINDOWS
+1. Instala Node.js LTS desde https://nodejs.org/ si aún no está instalado.
+2. Haz doble clic en INICIAR-WINDOWS.bat.
+3. Carta: http://127.0.0.1:4173/
+4. Editor: http://127.0.0.1:4173/editar-fotos.html
+
+INICIAR EN OTROS SISTEMAS
+Abre una terminal dentro de esta carpeta y ejecuta:
+    node servidor-local.js
+Después abre las direcciones anteriores en el navegador.
+
+CAMBIAR UNA FOTO
+1. Mantén el servidor en marcha y abre el editor.
+2. Selecciona el producto y elige una imagen JPG, PNG o WEBP.
+3. Pulsa «Guardar foto permanentemente».
+La imagen se guarda en assets/catalog/ y la ruta del producto se actualiza
+en index.html. El límite de carga es de 12 MB por imagen.
+
+ORGANIZACIÓN DE IMÁGENES
+- assets/catalog/: fotos del catálogo de productos.
+- assets/bebidas/: imágenes de bebidas.
+- assets/IMAGENES/: fotografías adicionales utilizadas en la carta.
+- assets/logo-rico.png: logotipo.
+- assets/fachada-rico.jpg y assets/fachada-fondo.jpg: imágenes de fachada.
+
+NOTAS
+- Las fotos externas de algunos productos, especialmente pizzas, necesitan
+  conexión a Internet.
+- Algunas variantes de Plato Kebab / Menú Platos Kebab con carne y arroz
+  todavía pueden necesitar una fotografía más específica.
+- No se han cambiado productos, nombres, descripciones, precios ni el diseño.
+- Para trasladar o respaldar el proyecto, copia la carpeta KebabRico completa,
+  incluida la carpeta assets/.
+- No cierres la ventana del servidor mientras uses la carta o el editor.
